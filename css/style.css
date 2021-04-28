@@ -9,8 +9,15 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 20px;
-  margin: 0 70px;
+  padding: 10px 70px;
+
+  background: rgb(158, 63, 63);
+}
+.header-wrapper {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  overflow: hidden;
 }
 #nav-bar a {
   display: inline-block;
@@ -42,6 +49,9 @@
 #submit {
   padding: 7px 20px;
 }
+.form-container {
+  margin-top: 110px;
+}
 
 /* Description */
 #description {
@@ -52,7 +62,8 @@
   margin-bottom: 50px;
 }
 
-#description i, h3 {
+#description i,
+h3 {
   margin-bottom: 5px;
 }
 
@@ -66,4 +77,40 @@
 iframe {
   display: block;
   margin: 0 auto;
+}
+/* Pricing */
+.header-pricing {
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 20px;
+}
+#pricing {
+  display: grid;
+
+  grid-template-columns: auto auto auto auto;
+  justify-content: center;
+}
+.price {
+  border: 1px solid gray;
+  padding: 20px 25px;
+  margin: 30px;
+}
+.price li {
+  list-style-type: none;
+}
+
+@media screen and (max-width: 838px) {
+  #pricing {
+    display: grid;
+
+    grid-template-columns: auto auto;
+    justify-content: center;
+  }
+  .price {
+    border: 1px solid gray;
+    padding: 20px 25px;
+    margin: 30px;
+    width: 220px;
+    text-align: center;
+  }
 }
