@@ -1,8 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap');
+
 /* General styling */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Roboto';
+  background: rgb(211, 211, 211);
 }
 /* Header */
 #header {
@@ -11,7 +15,7 @@
   justify-content: space-between;
   padding: 10px 70px;
 
-  background: rgb(158, 63, 63);
+  background: rgb(211, 211, 211);
 }
 .header-wrapper {
   position: fixed;
@@ -23,18 +27,28 @@
   display: inline-block;
   font-size: 1.3em;
   text-decoration: none;
-  padding: 20px 50px 0px 50px;
+  margin: 20px 20px 0px 50px;
+  color: black;
 }
+
+#nav-bar a:hover {
+  text-decoration: underline;
+}
+
 #header-img {
   width: 75px;
 }
 /* Form  */
 .form-container {
   text-align: center;
+  margin-top: 110px;
 }
 #submit {
   display: block;
   margin: 0 auto;
+  padding: 7px 20px;
+  background-color: #e8b21f;
+  border-color: #e8b21f;
 }
 .form-container h2,
 #email {
@@ -44,16 +58,16 @@
 #email {
   padding: 7px 5px;
   width: 300px;
-}
-
-#submit {
-  padding: 7px 20px;
-}
-.form-container {
-  margin-top: 110px;
+  background: white;
+  border-radius: 5px;
 }
 
 /* Description */
+
+.fab {
+  font-size: 30px;
+  color: #e8b21f;
+}
 #description {
   display: flex;
   flex-direction: column;
@@ -81,20 +95,34 @@ iframe {
 /* Pricing */
 .header-pricing {
   text-align: center;
-  margin-top: 100px;
-  margin-bottom: 20px;
+  margin-top: 50px;
 }
 #pricing {
   display: grid;
-
   grid-template-columns: auto auto auto auto;
   justify-content: center;
+  margin-bottom: 30px;
 }
+
 .price {
   border: 1px solid gray;
-  padding: 20px 25px;
   margin: 30px;
+  text-align: center;
 }
+
+.price h3 {
+  padding: 10px 0px;
+  background-color: rgb(100, 100, 100);
+}
+
+.price-info {
+  padding: 10px 25px;
+}
+
+.price-info h4 {
+  padding-bottom: 10px;
+}
+
 .price li {
   list-style-type: none;
 }
