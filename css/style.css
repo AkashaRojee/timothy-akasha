@@ -1,0 +1,44 @@
+/* General styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* Header */
+#header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 20px;
+  margin: 0 70px;
+}
+#nav-bar a {
+  display: inline-block;
+  font-size: 1.3em;
+  text-decoration: none;
+  padding: 20px 50px 0px 50px;
+}
+#header-img {
+  width: 75px;
+}
+/* Form  */
+.form-container {
+  text-align: center;
+}
+#submit {
+  display: block;
+  margin: 0 auto;
+}
+.form-container h2,
+#email {
+  margin-bottom: 15px;
+}
+
+#email {
+  padding: 7px 5px;
+  width: 300px;
+}
+
+#submit {
+  padding: 7px 20px;
+}
